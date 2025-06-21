@@ -1,6 +1,30 @@
 
 <nav class="navbar bg-body-tertiary">
-  <div class="container-fluid d-flex justify-content-center">
-    <a class="navbar-brand text-white" href="#">Meu Portifólio</a>
+  <div class="container-fluid d-flex justify-content-between">
+    <div class="nav">
+      <button class="btn btn-primary bi-list ms-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"></button>
+    </div>
+    <div>
+      <a class="navbar-brand text-white" href="#">Meu Portifólio</a>
+    </div>
+    <div class="logo">
+      <img
+        src="assets/images/logo.png"
+        alt="Logo marca"
+        width="120px"
+        height="80px"
+        class="me-3">
+    </div>
   </div>
 </nav>
+
+<div class="offcanvas offcanvas-start sidebar" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title text-white" id="offcanvasScrollingLabel">Menu</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body d-flex">
+    <i class="bi bi-github me-2"></i>
+    <a class="text-white" target="_blank" href="https://github.com/diegods26">Projetos no GitHub</a>
+  </div>
+</div>
