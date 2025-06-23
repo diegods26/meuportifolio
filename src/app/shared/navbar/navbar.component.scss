@@ -43,6 +43,11 @@ a {
   text-decoration: none;
 }
 
+.btn-close {
+  height: 15px !important;
+  background-color: red !important;
+}
+
 @media screen and (max-width: 900px) {
   .nav-menu {
     display: none !important;
