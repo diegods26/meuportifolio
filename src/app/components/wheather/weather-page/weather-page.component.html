@@ -1,0 +1,16 @@
+<div class="search">
+  <form #form="ngForm" (ngSubmit)="onSubmit()">
+    <input
+      type="text"
+      placeholder="Busca localização"
+      name="city"
+      [(ngModel)]="initialCityName">
+    <i
+      class="fas fa-magnifying-glass search-icon"
+      style="margin-left: 10px; cursor: pointer;"
+      (click)="onSubmit()">
+    </i>
+  </form>
+</div>
+
+<app-weather *ngIf="weatherDatas" [weatherDatas]="weatherDatas"></app-weather>

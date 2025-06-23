@@ -1,0 +1,66 @@
+<div class="container mt-2" *ngIf="weatherDatas">
+  <!-- <div class="card" style="width: 30rem;">
+    <div class="card-body">
+      <img
+        src="assets/images/sun.jpg"
+        class="card-img-top"
+        alt="foto do sol"
+        *ngIf="weatherDatas.main.temp > 22"
+      />
+      <img
+        src="assets/images/cold1.jpg"
+        alt="foto tempo frio"
+        class="card-img-top"
+        *ngIf="weatherDatas.main.temp < 22"
+      />
+    </div>
+
+    <div class="weather-data">
+      <div class="location">
+        {{ weatherDatas.name }}
+      </div>
+      <div class="temperature">
+        {{ weatherDatas.main.temp | number: "1.0-0" }}°C
+      </div>
+    </div>
+  </div> -->
+
+  <div
+    class="content p-1"
+    style="height: 100px;
+      margin-left: 5%; width:
+      300px; border-radius: 1%;
+      position: relative;
+      overflow: hidden;">
+  <!-- Bloco de fundo com imagem dinâmica -->
+  <div
+    class="content-img"
+    [ngStyle]="{
+      'background-image': weatherDatas.main.temp > 22
+        ? 'url(assets/images/sun.jpg)'
+        : 'url(assets/images/cold1.jpg)',
+      'background-size': 'cover',
+      'opacity': '1',
+      'background-position': 'center',
+      'height': '100%',
+      'width': '100%',
+      'position': 'absolute',
+      'top': '0',
+      'left': '0',
+      'z-index': '1',
+      'border-radius': '5%'
+    }"
+  ></div>
+
+  <!-- Bloco com o conteúdo que ficará por cima -->
+  <div class="weather" style="position: relative; z-index: 2; color: rgb(19, 19, 202); padding: 5px;">
+    <div class="fw-bold fs-2">{{ weatherDatas.name }}</div>
+    <div class="fs-3">{{ weatherDatas.main.temp | number: '1.0-0' }}°C</div>
+  </div>
+</div>
+
+
+
+</div>
+
+

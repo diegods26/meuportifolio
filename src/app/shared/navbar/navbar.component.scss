@@ -2,15 +2,25 @@
   background: linear-gradient(90deg,rgba(14, 14, 20, 1) 0%, rgba(33, 33, 79, 1) 46%, rgba(25, 166, 194, 1) 100%);
 }
 
-.nav {
+.nav-mobile {
+  display: none;
   width: 100px;
   height: 80px;
+}
+
+.dropdown {
+  margin-right: 10%;
+}
+
+.logo {
+  margin-right: 70%;
+  cursor: pointer;
 }
 
 button {
   height: 40px;
   background-color: #10101b;
-  margin-top: 20px;
+  margin-top: 16px;
   border-color: #adabab;
 }
 
@@ -31,5 +41,35 @@ button {
 
 a {
   text-decoration: none;
+}
+
+@media screen and (max-width: 900px) {
+  .nav-menu {
+    display: none !important;
+  }
+
+  .navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav-options {
+    display: none;
+  }
+
+  .nav-mobile {
+    display: block;
+    width: 75px;
+  }
+
+
+  .navbar-brand {
+    margin-left: 5px;
+  }
+
+  .logo-img {
+    margin-left: 22%;
+  }
 }
 

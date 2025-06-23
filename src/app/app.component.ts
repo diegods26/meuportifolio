@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from "./shared/navbar/navbar.component";
+import { WeatherPageComponent } from "./components/wheather/weather-page/weather-page.component";
 
 @Component({
   selector: 'app-root',

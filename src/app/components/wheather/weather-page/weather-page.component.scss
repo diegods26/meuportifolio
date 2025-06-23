@@ -1,0 +1,21 @@
+.search {
+    margin-top: 1em !important;
+    text-align: center;
+    width: 180px;
+    margin-left: 30%;
+}
+
+@media screen and (max-width: 600px) {
+  .search {
+    margin-left: 60% !important;
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+  .search {
+    margin-left: 40% !important;
+  }
+
+}
+

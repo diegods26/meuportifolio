@@ -1,0 +1,52 @@
+.weather {
+  top: 0;
+  left: 20%;
+  text-shadow:
+    -1px -1px 0 white,
+     1px -1px 0 white,
+    -1px  1px 0 white,
+     1px  1px 0 white;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 20rem;
+    margin-left: 10%;
+  }
+
+  .card-weather {
+    width: 200px;
+  }
+
+  img {
+    width: 250px;
+    height: 120px;
+  }
+
+  .content {
+    width: 297px !important;
+    margin-left: 3% !important;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container {
+    width: 18rem;
+    margin-left: 0;
+  }
+
+  .content {
+    width: 280px !important;
+  }
+
+  .card-weather {
+    width: 180px;
+  }
+
+  img {
+    width: 250px;
+    height: 120px;
+  }
+
+
+}
