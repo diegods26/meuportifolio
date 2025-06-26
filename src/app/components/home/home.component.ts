@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { WeatherPageComponent } from "../wheather/weather-page/weather-page.component";
 import { WeatherService } from '../../services/weather.service';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-home',
-  imports: [WeatherPageComponent],
+  imports: [WeatherPageComponent, RouterModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })

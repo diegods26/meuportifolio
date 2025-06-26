@@ -1,0 +1,90 @@
+.resume {
+  height: auto;
+}
+
+.side-resume {
+  background-color: #163856;
+}
+
+.foto {
+  border-radius: 50%;
+  width: 60%;
+  height: 155px;
+  margin-left: 52px;
+  border: 5px solid white
+}
+
+.line {
+  margin-top: -6px;
+}
+
+.subline {
+  margin-top: -6px;
+  width: 94%;
+  margin-left: 2.5%;
+}
+
+.phone {
+  margin-right: 80px;
+}
+
+.email {
+  margin-right: 13px;
+}
+
+.location {
+  margin-right: 138px;
+  font-size: 14px;
+}
+
+.linkedin {
+  margin-right: 22px !important;
+}
+
+.formacao {
+  font-size: 14px;
+}
+
+.certifications {
+  margin-right: 62px;
+}
+
+.resume-body {
+  background-color: #fff;
+}
+
+.title {
+  margin-left: 20%;
+}
+
+.subtitle {
+  margin-top: -2%;
+}
+
+b {
+  color: #545454;
+}
+
+.resume-body-content {
+  margin-top: 18%;
+}
+
+.color {
+  color: #163856;
+}
+
+
+@media screen and (max-width: 600px) {
+  .resume {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .foto {
+    margin-left: 19%;
+  }
+
+  .title {
+    margin-left: 6%;
+  }
+}
